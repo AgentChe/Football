@@ -85,11 +85,3 @@ struct TagLayout: Layout {
                 .init(width: maxX, height: currentPosition.y + lineHeight))
     }
 }
-
-#Preview {
-    TagLayout(spacing: 16.scale, alignment: .leading) {
-        ForEach(Game.allCases, id: \.self) { item in
-            TagView(item.name, isSelected: false)
-        }
-    }
-}

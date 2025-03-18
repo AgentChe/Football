@@ -34,16 +34,17 @@ final class HomeViewModel: ObservableObject {
             .switchToLatest()
             .shareReplay(1)
         
-        let categories = cardsManager
-            .makeCategories(forceUpdate: false)
-            .replaceError(with: [])
+//        let categories = cardsManager
+//            .makeCategories(forceUpdate: false)
+//            .replaceError(with: [])
         
         let homeResult = homeRequestResult
             .compactMap { $0.success }
         
-        Publishers
-            .CombineLatest(homeResult, categories)
-            .compactMap { home, categories -> [HomeViewCellType]? in
+//        Publishers
+//            .CombineLatest(homeResult, categories)
+        homeResult
+            .compactMap { home -> [HomeViewCellType]? in
                 var dataSource: [HomeViewCellType] = []
                 
                 if let priceReport = home.personalScanner {
@@ -56,9 +57,9 @@ final class HomeViewModel: ObservableObject {
                     dataSource.append(contentsOf: home.recommendation.map { .recommendedCard($0) })
                 }
                 
-                if !categories.isEmpty {
-                    dataSource.append(.allias(categories))
-                }
+//                if !categories.isEmpty {
+//                    dataSource.append(.allias(categories))
+//                }
                 
                 if !home.other.isEmpty {
                     dataSource.append(.sectionTitle("Home.Section.Other".localized))

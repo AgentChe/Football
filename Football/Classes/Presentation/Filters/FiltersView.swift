@@ -35,22 +35,22 @@ struct FiltersView: View {
                         }
                     }
                     
-                    Text("Filters.Section.Category".localized)
-                        .font(Fonts.Inter.font(size: 18.scale, weight: .w700))
-                        .foregroundStyle(.white)
-                        .padding(.vertical, 10.scale)
-                    
-                    TagLayout(spacing: 12.scale, alignment: .leading) {
-                        ForEach(viewModel.categories, id: \.self) { item in
-                            Button(
-                                action: { cacheFilters.category = item },
-                                label: {
-                                    TagView(item.name, isSelected: cacheFilters.category == item)
-                                }
-                            )
-                        }
-                    }
-                    .tagStyle(.checkbox)
+//                    Text("Filters.Section.Category".localized)
+//                        .font(Fonts.Inter.font(size: 18.scale, weight: .w700))
+//                        .foregroundStyle(.white)
+//                        .padding(.vertical, 10.scale)
+//                    
+//                    TagLayout(spacing: 12.scale, alignment: .leading) {
+//                        ForEach(viewModel.categories, id: \.self) { item in
+//                            Button(
+//                                action: { cacheFilters.category = item },
+//                                label: {
+//                                    TagView(item.name, isSelected: cacheFilters.category == item)
+//                                }
+//                            )
+//                        }
+//                    }
+//                    .tagStyle(.checkbox)
                     
                     Text("Filters.Section.Grade".localized)
                         .font(Fonts.Inter.font(size: 18.scale, weight: .w700))

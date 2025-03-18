@@ -13,17 +13,19 @@ struct OnboardingCardView2: View {
     var body: some View {
         VStack(spacing: 0) {
             Image("Onboarding2")
-                .padding(.top, ScreenSize.isIphoneXFamily ? 54.scale : 34.scale)
-                .padding(.bottom, ScreenSize.isIphoneXFamily ? 46.scale : 26.scale)
+                .padding(.top, ScreenSize.isIphoneXFamily ? 66.scale : 34.scale)
+                .padding(.bottom, 82.scale)
             
-            Text("Onboarding.Title2".localized.attributed(with: .onboardingTitle))
-                .multilineTextAlignment(.center)
-                .lineSpacing(5.scale)
-                .padding(.bottom, 24.scale)
-            
-            Text("Onboarding.Subtitle2".localized.attributed(with: .onboardingSubtitle))
-                .multilineTextAlignment(.center)
-                .lineSpacing(10.scale)
+            VStack(alignment: .leading, spacing: 24.scale) {
+                Text("Onboarding.Title2".localized.attributed(with: .onboardingTitle))
+                    .multilineTextAlignment(.leading)
+                    .lineSpacing(5.scale)
+                
+                Text("Onboarding.Subtitle2".localized.attributed(with: .onboardingSubtitle))
+                    .multilineTextAlignment(.leading)
+                    .lineSpacing(10.scale)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
             
             Spacer()
             
@@ -36,7 +38,6 @@ struct OnboardingCardView2: View {
         }
         .padding(.horizontal, 16.scale)
         .frame(maxHeight: .infinity)
-        .background(.black)
     }
 }
 

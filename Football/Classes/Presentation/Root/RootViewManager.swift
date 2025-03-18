@@ -55,14 +55,13 @@ final class RootViewManager: ObservableObject {
         
         cancellable = request
             .map { [cardsManager] _ -> AnyPublisher<Void, Error> in
-                let categories = cardsManager.makeCategories(forceUpdate: true)
-                    .mapToVoid()
+//                let categories = cardsManager.makeCategories(forceUpdate: true)
+//                    .mapToVoid()
                 
                 let grades = cardsManager.makeGrades(forceUpdate: true)
                     .mapToVoid()
                 
-                return Publishers.Zip(categories, grades)
-                    .mapToVoid()
+                return grades
             }
             .switchToLatest()
             .receive(on: DispatchQueue.main)

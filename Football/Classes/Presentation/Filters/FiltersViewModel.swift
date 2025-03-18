@@ -8,17 +8,17 @@
 import Foundation
 
 final class FiltersViewModel: ObservableObject {
-    @Published var categories: [CardCategory] = []
+//    @Published var categories: [CardCategory] = []
     @Published var grades: [Grade] = []
     
     private lazy var cardsManager = CardsManager()
     
     init() {
-        cardsManager
-            .makeCategories(forceUpdate: false)
-            .replaceError(with: [])
-            .receive(on: DispatchQueue.main)
-            .assign(to: &$categories)
+//        cardsManager
+//            .makeCategories(forceUpdate: false)
+//            .replaceError(with: [])
+//            .receive(on: DispatchQueue.main)
+//            .assign(to: &$categories)
         
         cardsManager
             .makeGrades(forceUpdate: false)

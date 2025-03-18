@@ -23,7 +23,7 @@ struct SportCardsButtonStyle: ButtonStyle {
             case .secondary:
                 Appearance.main400
             case .destroy:
-                Appearance.main500
+                Appearance.main100
             }
         }
     }

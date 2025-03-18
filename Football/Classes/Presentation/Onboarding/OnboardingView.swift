@@ -21,7 +21,7 @@ struct OnboardingView: View {
                 .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
         }
         .animation(.default, value: viewModel.currentPage)
-        .background(.black)
+        .gradientBackground()
         .screenState($viewModel.screenState, tryAgain: viewModel.saveData)
         .onReceive(viewModel.$isFinish) { value in
             if value {

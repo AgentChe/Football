@@ -16,22 +16,22 @@ struct PreferencesView: View {
             Group {
                 ScrollView(.vertical) {
                     LazyVStack(alignment: .leading, spacing: 24.scale) {
-                        Text("Preferences.Category".localized)
-                            .font(Fonts.Inter.font(size: 18.scale, weight: .w700))
-                            .foregroundStyle(.white)
-                            .padding(.vertical, 10.scale)
-                        
-                        TagLayout(spacing: 12.scale, alignment: .leading) {
-                            ForEach(viewModel.categories, id: \.self) { item in
-                                Button(
-                                    action: { viewModel.currentCategory = item },
-                                    label: {
-                                        TagView(item.name, isSelected: viewModel.currentCategory == item)
-                                    }
-                                )
-                            }
-                        }
-                        .tagStyle(.checkbox)
+//                        Text("Preferences.Category".localized)
+//                            .font(Fonts.Inter.font(size: 18.scale, weight: .w700))
+//                            .foregroundStyle(.white)
+//                            .padding(.vertical, 10.scale)
+//                        
+//                        TagLayout(spacing: 12.scale, alignment: .leading) {
+//                            ForEach(viewModel.categories, id: \.self) { item in
+//                                Button(
+//                                    action: { viewModel.currentCategory = item },
+//                                    label: {
+//                                        TagView(item.name, isSelected: viewModel.currentCategory == item)
+//                                    }
+//                                )
+//                            }
+//                        }
+//                        .tagStyle(.checkbox)
                         
                         Text("Preferences.Grade".localized)
                             .font(Fonts.Inter.font(size: 18.scale, weight: .w700))

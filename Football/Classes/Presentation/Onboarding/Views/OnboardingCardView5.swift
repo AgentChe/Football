@@ -58,7 +58,6 @@ struct OnboardingCardView5: View {
             .padding(.horizontal, 16.scale)
             .padding(.bottom, 20.scale)
         }
-        .background(.black)
     }
 }
 
@@ -86,11 +85,11 @@ struct GradeView: View {
             Image(isSelected ? "Checkbox.Selected" : "Checkbox.Default")
         }
         .padding(16.scale)
-        .background(isSelected ? .main400 : .black)
+        .background(isSelected ? .main400 : .clear)
         .clipShape(RoundedRectangle(cornerRadius: 12.scale))
         .overlay {
             RoundedRectangle(cornerRadius: 12.scale)
-                .stroke(.main200, lineWidth: 1.scale)
+                .stroke(.main400, lineWidth: 1.scale)
         }
     }
 }

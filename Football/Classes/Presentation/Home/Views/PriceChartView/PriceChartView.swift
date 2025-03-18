@@ -32,7 +32,7 @@ struct PriceChartView: View {
                         .interpolationMethod(.catmullRom)
                         .foregroundStyle(
                             LinearGradient(
-                                colors: [.main100.opacity(0.4), .main300.opacity(1)],
+                                colors: [.main500.opacity(0.4), .main300.opacity(1)],
                                 startPoint: .top,
                                 endPoint: .bottom
                             )
@@ -40,7 +40,7 @@ struct PriceChartView: View {
                     
                     LineMark(x: .value("Date", price.dateTime), y: .value("Price", price.priceRaw))
                         .interpolationMethod(.catmullRom)
-                        .foregroundStyle(.main100)
+                        .foregroundStyle(.main500)
                         .lineStyle(StrokeStyle(lineWidth: 2.scale))
                 }
             }
@@ -53,7 +53,7 @@ struct PriceChartView: View {
             .frame(height: 108.scale, alignment: .bottom)
             .background {
                 Rectangle()
-                    .fill(.main100)
+                    .fill(.main500)
                     .frame(width: 1.scale)
             }
             .chartOverlay(alignment: .top) { proxy in
@@ -63,10 +63,10 @@ struct PriceChartView: View {
                         .foregroundStyle(.white)
                         .padding(.horizontal, 16.scale)
                         .padding(.vertical, 8.scale)
-                        .background(.main200, in: Capsule())
+                        .background(.main400, in: Capsule())
                     
                     Triangle()
-                        .fill(.main200)
+                        .fill(.main400)
                         .frame(width: 12.scale, height: 6.scale)
                 }
             }
@@ -84,13 +84,13 @@ struct PriceChartView: View {
                         }
                     )
                     .background(
-                        viewModel.currentFilter == filter ? .main100 : .main300,
+                        viewModel.currentFilter == filter ? .main100 : .main200,
                         in: Capsule()
                     )
                     .overlay {
                         if viewModel.currentFilter != filter {
                             Capsule()
-                                .stroke(.main200, lineWidth: 1.scale)
+                                .stroke(.main400, lineWidth: 1.scale)
                         }
                     }
                 }
@@ -113,15 +113,15 @@ struct PriceChartView: View {
             let image = Image(model.diffPercent <= 0 ? "Down" : "Up")
             let percent = abs(model.diffPercent / 100)
             
-            let percentString: String
+            let percentString: Text
             
             if percent != 0.0 {
-                percentString =  "( \(image) \(percent.formatted(.percent)))"
+                percentString = Text("( \(image) \(percent.formatted(.percent)))")
             } else {
-                percentString = ""
+                percentString = Text("")
             }
             
-            return Text("\(date): \(model.price)\(percentString)")
+            return Text("\(date): \(model.price)") + percentString
         } ?? Text("Chart.Empty".localized)
     }
 }

@@ -15,7 +15,7 @@ final class OnboardingViewModel: ObservableObject {
     @Published var categories: [CardCategory] = []
     @Published var grades: [Grade] = []
     
-    @Published var pages: [OnboardingPageItem] = OnboardingPageItem.allCases
+    @Published var pages: [OnboardingPageItem] = [.onboarding1, .onboarding2, .onboarding3, .onboarding5]
     @Published var currentPage: OnboardingPageItem = .onboarding1
     
     @Published var screenState: ScreenState = .loaded
@@ -27,11 +27,11 @@ final class OnboardingViewModel: ObservableObject {
     private var cancellable: AnyCancellable?
     
     init() {
-        cardsManager
-            .makeCategories(forceUpdate: false)
-            .replaceError(with: [])
-            .receive(on: DispatchQueue.main)
-            .assign(to: &$categories)
+//        cardsManager
+//            .makeCategories(forceUpdate: false)
+//            .replaceError(with: [])
+//            .receive(on: DispatchQueue.main)
+//            .assign(to: &$categories)
         
         cardsManager
             .makeGrades(forceUpdate: false)

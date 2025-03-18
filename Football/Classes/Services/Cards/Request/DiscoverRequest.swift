@@ -42,7 +42,7 @@ struct DiscoverRequest: APIRequestBody {
         }
         var filtersParams: [String: Any] = [:]
         
-        filtersParams["category"] = filters.category?.alias
+        filtersParams["category"] = "football"
         filtersParams["grade"] = filters.grade?.alias
         
         if !filtersParams.isEmpty {

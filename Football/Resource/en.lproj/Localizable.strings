@@ -15,27 +15,18 @@
 "Delete" = "Delete";
 
 // MARK: Splash
-"Splash.Title" = "Welcome to CardCollector";
-"Splash.Subtitle" = "Discover, scan, and collect your favorite sports cards all in one place.";
+"Splash.Title" = "Welcome to Football Card Collector ";
+"Splash.Subtitle" = "Discover, scan, and collect your favorite football cards all in one place.";
 
 // MARK: Onboarding
 "Onboarding.Title1" = "Personalize Your Experience";
 "Onboarding.Title2" = "Scan and Add Cards";
 "Onboarding.Title3" = "Explore and Manage";
-"Onboarding.Title4" = "Pick the game you want to follow";
+"Onboarding.Title4" = "Pick the cards you want to follow";
 "Onboarding.Title5" = "Pick the card grades you want to monitor";
 "Onboarding.Subtitle1" = "Set your preferences to get personalized card recommendations and updates.";
 "Onboarding.Subtitle2" = "Use your camera to scan and add new cards to your collection effortlessly.";
 "Onboarding.Subtitle3" = "Track your collection & discover latest releases";
-"Onboarding.Tag.AllGames" = "All games";
-"Onboarding.Tag.Baseball" = "Baseball";
-"Onboarding.Tag.Basketball" = "Basketball";
-"Onboarding.Tag.MMA" = "MMA";
-"Onboarding.Tag.Football" = "Football";
-"Onboarding.Tag.Racing" = "Racing";
-"Onboarding.Tag.Soccer" = "Soccer";
-"Onboarding.Tag.Hockey" = "Hockey";
-"Onboarding.Tag.Wresting" = "Wresting";
 
 // MARK: Paygate
 "Paygate.Title" = "Upgrade Premium";

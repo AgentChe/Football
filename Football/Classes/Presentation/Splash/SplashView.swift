@@ -38,28 +38,32 @@ struct SplashView: View {
     var body: some View {
         VStack {
             Image("Splash")
-                .padding(.top, ScreenSize.isIphoneXFamily ? 104.scale : 84.scale)
+                .padding(.top, ScreenSize.isIphoneXFamily ? 220.scale : 84.scale)
                 .padding(.bottom, ScreenSize.isIphoneXFamily ? 46.scale : 26.scale)
+            Spacer()
             
-            Text("Splash.Title".localized.attributed(with: .onboardingTitle))
-                .multilineTextAlignment(.center)
-                .lineSpacing(5.scale)
-                .padding(.bottom, 24.scale)
-            
-            Text("Splash.Subtitle".localized.attributed(with: .onboardingSubtitle))
-                .multilineTextAlignment(.center)
-                .lineSpacing(10.scale)
+            VStack(alignment: .leading) {
+                Text("Splash.Title".localized.attributed(with: .onboardingTitle))
+                    .multilineTextAlignment(.leading)
+                    .lineSpacing(5.scale)
+                    .padding(.bottom, 24.scale)
+                
+                Text("Splash.Subtitle".localized.attributed(with: .onboardingSubtitle))
+                    .multilineTextAlignment(.leading)
+                    .lineSpacing(10.scale)
+            }
             
             Spacer()
             ProgressView()
                 .progressViewStyle(.sportCards)
                 .frame(width: 40.scale, height: 40.scale)
-                .padding(.bottom, 56.scale)
+                .padding(.bottom, 70.scale)
                 .foregroundStyle(.white)
         }
         .frame(maxWidth: .infinity)
         .padding(.horizontal, 16.scale)
-        .background(.black)
+        .gradientBackground()
+        .ignoresSafeArea()
     }
 }
 #Preview {
