@@ -13,10 +13,7 @@ target 'Football' do
 
   pod 'OtterScaleiOS', :git => "https://github.com/AgentChe/OtterScaleiOS.git"
   
-  pod 'FBSDKCoreKit'
   pod 'Amplitude-iOS'
-  pod 'Firebase/Analytics'
-  pod 'Firebase/Messaging'
 
 end
 

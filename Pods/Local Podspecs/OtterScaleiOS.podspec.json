@@ -1,0 +1,23 @@
+{
+  "name": "OtterScaleiOS",
+  "version": "1.26",
+  "summary": "A CocoaPods library written in Swift",
+  "homepage": "https://github.com/AgentChe/OtterScaleiOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "akonst17": "akonst17@gmail.com"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "swift_versions": "5",
+  "source": {
+    "git": "https://github.com/AgentChe/OtterScaleiOS.git",
+    "tag": "1.26"
+  },
+  "source_files": "OtterScaleiOS/**/*.{h,m,swift}",
+  "swift_version": "5"
+}

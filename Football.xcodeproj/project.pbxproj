@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		6CED20AECA71227E890C55B7 /* Pods_Football.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB6BBFC5BB1077E2E73DF4C /* Pods_Football.framework */; };
 		86EBD5772D89DEB500FEB763 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD49E2D89DEB500FEB763 /* AmplitudeManager.swift */; };
-		86EBD5782D89DEB500FEB763 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD49F2D89DEB500FEB763 /* FacebookManager.swift */; };
-		86EBD5792D89DEB500FEB763 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD4A02D89DEB500FEB763 /* FirebaseManager.swift */; };
 		86EBD57A2D89DEB500FEB763 /* AlertPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD4A22D89DEB500FEB763 /* AlertPresentation.swift */; };
 		86EBD57B2D89DEB500FEB763 /* Button+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD4A32D89DEB500FEB763 /* Button+Styles.swift */; };
 		86EBD57C2D89DEB500FEB763 /* GradientBackgorund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD4A42D89DEB500FEB763 /* GradientBackgorund.swift */; };
@@ -165,8 +163,6 @@
 		6BB6BBFC5BB1077E2E73DF4C /* Pods_Football.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Football.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EBD01F2D88939B00FEB763 /* Football.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Football.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EBD49E2D89DEB500FEB763 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
-		86EBD49F2D89DEB500FEB763 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
-		86EBD4A02D89DEB500FEB763 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		86EBD4A22D89DEB500FEB763 /* AlertPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentation.swift; sourceTree = "<group>"; };
 		86EBD4A32D89DEB500FEB763 /* Button+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Styles.swift"; sourceTree = "<group>"; };
 		86EBD4A42D89DEB500FEB763 /* GradientBackgorund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgorund.swift; sourceTree = "<group>"; };
@@ -361,8 +357,6 @@
 			isa = PBXGroup;
 			children = (
 				86EBD49E2D89DEB500FEB763 /* AmplitudeManager.swift */,
-				86EBD49F2D89DEB500FEB763 /* FacebookManager.swift */,
-				86EBD4A02D89DEB500FEB763 /* FirebaseManager.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -1156,8 +1150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				86EBD5772D89DEB500FEB763 /* AmplitudeManager.swift in Sources */,
-				86EBD5782D89DEB500FEB763 /* FacebookManager.swift in Sources */,
-				86EBD5792D89DEB500FEB763 /* FirebaseManager.swift in Sources */,
 				86EBD57A2D89DEB500FEB763 /* AlertPresentation.swift in Sources */,
 				86EBD57B2D89DEB500FEB763 /* Button+Styles.swift in Sources */,
 				86EBD57C2D89DEB500FEB763 /* GradientBackgorund.swift in Sources */,
@@ -1460,7 +1452,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Football.Football;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1499,7 +1491,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Football.Football;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

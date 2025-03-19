@@ -1,0 +1,6 @@
+framework module OtterScaleiOS {
+  umbrella header "OtterScaleiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

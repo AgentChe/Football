@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (5.10.2)
+  - Amplitude-iOS (4.10.0)
+  - Gifu (3.5.1)
+  - Nuke (10.7.1)
+  - NukeUI (0.8.0):
+    - Gifu (~> 3.0)
+    - Nuke (~> 10.5)
+  - OtterScaleiOS (1.26)
+  - SwiftyStoreKit (0.16.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Amplitude-iOS
+  - NukeUI
+  - OtterScaleiOS (from `https://github.com/AgentChe/OtterScaleiOS.git`)
+  - SwiftyStoreKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Amplitude-iOS
+    - Gifu
+    - Nuke
+    - NukeUI
+    - SwiftyStoreKit
+
+EXTERNAL SOURCES:
+  OtterScaleiOS:
+    :git: https://github.com/AgentChe/OtterScaleiOS.git
+
+CHECKOUT OPTIONS:
+  OtterScaleiOS:
+    :commit: 12663a39c90d42b7ff6e6ad87a6dccea26ff763b
+    :git: https://github.com/AgentChe/OtterScaleiOS.git
+
+SPEC CHECKSUMS:
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  Amplitude-iOS: 7d8cdc3408ba35c2e68368fc7c692cd104606b94
+  Gifu: 9f7e52357d41c0739709019eb80a71ad9aab1b6d
+  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
+  NukeUI: 6e99837a8d066c93baa4262692d9ea9ffbc863ba
+  OtterScaleiOS: 7797bb943c69572cd25a6118939ddb7c4684f03c
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+
+PODFILE CHECKSUM: faf4faaa08f14f616546c2a0f01ed86645899f67
+
+COCOAPODS: 1.16.2
