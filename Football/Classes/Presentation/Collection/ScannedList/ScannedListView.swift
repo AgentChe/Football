@@ -21,12 +21,14 @@ struct ScannedListView: View {
                     .padding(.top, 24.scale)
             }
             
-            CollectionSettingsView(
-                currentLayout: $layout,
-                filters: $viewModel.filters
-            )
-            .padding(.vertical, 24.scale)
-            .padding(.horizontal, 16.scale)
+            if !viewModel.cards.isEmpty || viewModel.filters.count != 0 {
+                CollectionSettingsView(
+                    currentLayout: $layout,
+                    filters: $viewModel.filters
+                )
+                .padding(.vertical, 24.scale)
+                .padding(.horizontal, 16.scale)
+            }
             
             ScrollView(.vertical) {
                 LazyVGrid(columns: layout.columns, spacing: 16.scale) {

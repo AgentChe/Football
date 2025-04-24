@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6CED20AECA71227E890C55B7 /* Pods_Football.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB6BBFC5BB1077E2E73DF4C /* Pods_Football.framework */; };
+		86CFAC6B2DB96E6D00FFC7D3 /* GradingHelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC692DB96E6D00FFC7D3 /* GradingHelpViewModel.swift */; };
+		86CFAC6C2DB96E6D00FFC7D3 /* GradingHelpItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC662DB96E6D00FFC7D3 /* GradingHelpItem.swift */; };
+		86CFAC6D2DB96E6D00FFC7D3 /* GradingHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC682DB96E6D00FFC7D3 /* GradingHelpView.swift */; };
+		86CFAC6E2DB96E6D00FFC7D3 /* GradingHelpType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC652DB96E6D00FFC7D3 /* GradingHelpType.swift */; };
+		86CFAC772DB96E7D00FFC7D3 /* FastFiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC712DB96E7D00FFC7D3 /* FastFiltersView.swift */; };
+		86CFAC782DB96E7D00FFC7D3 /* FastFilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC6F2DB96E7D00FFC7D3 /* FastFilterType.swift */; };
+		86CFAC792DB96E7D00FFC7D3 /* FastFiltersSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC752DB96E7D00FFC7D3 /* FastFiltersSheetViewModel.swift */; };
+		86CFAC7A2DB96E7D00FFC7D3 /* FastFiltersSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC742DB96E7D00FFC7D3 /* FastFiltersSheet.swift */; };
 		86EBD5772D89DEB500FEB763 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD49E2D89DEB500FEB763 /* AmplitudeManager.swift */; };
 		86EBD57A2D89DEB500FEB763 /* AlertPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD4A22D89DEB500FEB763 /* AlertPresentation.swift */; };
 		86EBD57B2D89DEB500FEB763 /* Button+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD4A32D89DEB500FEB763 /* Button+Styles.swift */; };
@@ -113,7 +121,7 @@
 		86EBD5DF2D89DEB500FEB763 /* CardDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD5362D89DEB500FEB763 /* CardDetails.swift */; };
 		86EBD5E02D89DEB500FEB763 /* CardDiscoverResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD5372D89DEB500FEB763 /* CardDiscoverResponse.swift */; };
 		86EBD5E12D89DEB500FEB763 /* CardUploadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD5382D89DEB500FEB763 /* CardUploadResponse.swift */; };
-		86EBD5E22D89DEB500FEB763 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD5392D89DEB500FEB763 /* Grade.swift */; };
+		86EBD5E22D89DEB500FEB763 /* GradeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD5392D89DEB500FEB763 /* GradeService.swift */; };
 		86EBD5E32D89DEB500FEB763 /* CardDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD53B2D89DEB500FEB763 /* CardDetailsRequest.swift */; };
 		86EBD5E42D89DEB500FEB763 /* CategoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD53C2D89DEB500FEB763 /* CategoriesRequest.swift */; };
 		86EBD5E52D89DEB500FEB763 /* DiscoverRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD53D2D89DEB500FEB763 /* DiscoverRequest.swift */; };
@@ -161,6 +169,14 @@
 /* Begin PBXFileReference section */
 		113984A2AC027C1EA6EE25BF /* Pods-Football.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Football.debug.xcconfig"; path = "Target Support Files/Pods-Football/Pods-Football.debug.xcconfig"; sourceTree = "<group>"; };
 		6BB6BBFC5BB1077E2E73DF4C /* Pods_Football.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Football.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86CFAC652DB96E6D00FFC7D3 /* GradingHelpType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingHelpType.swift; sourceTree = "<group>"; };
+		86CFAC662DB96E6D00FFC7D3 /* GradingHelpItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingHelpItem.swift; sourceTree = "<group>"; };
+		86CFAC682DB96E6D00FFC7D3 /* GradingHelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingHelpView.swift; sourceTree = "<group>"; };
+		86CFAC692DB96E6D00FFC7D3 /* GradingHelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingHelpViewModel.swift; sourceTree = "<group>"; };
+		86CFAC6F2DB96E7D00FFC7D3 /* FastFilterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastFilterType.swift; sourceTree = "<group>"; };
+		86CFAC712DB96E7D00FFC7D3 /* FastFiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastFiltersView.swift; sourceTree = "<group>"; };
+		86CFAC742DB96E7D00FFC7D3 /* FastFiltersSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastFiltersSheet.swift; sourceTree = "<group>"; };
+		86CFAC752DB96E7D00FFC7D3 /* FastFiltersSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastFiltersSheetViewModel.swift; sourceTree = "<group>"; };
 		86EBD01F2D88939B00FEB763 /* Football.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Football.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EBD49E2D89DEB500FEB763 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
 		86EBD4A22D89DEB500FEB763 /* AlertPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentation.swift; sourceTree = "<group>"; };
@@ -267,7 +283,7 @@
 		86EBD5362D89DEB500FEB763 /* CardDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetails.swift; sourceTree = "<group>"; };
 		86EBD5372D89DEB500FEB763 /* CardDiscoverResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDiscoverResponse.swift; sourceTree = "<group>"; };
 		86EBD5382D89DEB500FEB763 /* CardUploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUploadResponse.swift; sourceTree = "<group>"; };
-		86EBD5392D89DEB500FEB763 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		86EBD5392D89DEB500FEB763 /* GradeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeService.swift; sourceTree = "<group>"; };
 		86EBD53B2D89DEB500FEB763 /* CardDetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsRequest.swift; sourceTree = "<group>"; };
 		86EBD53C2D89DEB500FEB763 /* CategoriesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRequest.swift; sourceTree = "<group>"; };
 		86EBD53D2D89DEB500FEB763 /* DiscoverRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRequest.swift; sourceTree = "<group>"; };
@@ -333,6 +349,60 @@
 				BB10FB3C0398FF048FD385C2 /* Pods-Football.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		86CFAC672DB96E6D00FFC7D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86CFAC652DB96E6D00FFC7D3 /* GradingHelpType.swift */,
+				86CFAC662DB96E6D00FFC7D3 /* GradingHelpItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86CFAC6A2DB96E6D00FFC7D3 /* GradingHelp */ = {
+			isa = PBXGroup;
+			children = (
+				86CFAC672DB96E6D00FFC7D3 /* Models */,
+				86CFAC682DB96E6D00FFC7D3 /* GradingHelpView.swift */,
+				86CFAC692DB96E6D00FFC7D3 /* GradingHelpViewModel.swift */,
+			);
+			path = GradingHelp;
+			sourceTree = "<group>";
+		};
+		86CFAC702DB96E7D00FFC7D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86CFAC6F2DB96E7D00FFC7D3 /* FastFilterType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86CFAC722DB96E7D00FFC7D3 /* FastFiltersCarusel */ = {
+			isa = PBXGroup;
+			children = (
+				86CFAC702DB96E7D00FFC7D3 /* Models */,
+				86CFAC712DB96E7D00FFC7D3 /* FastFiltersView.swift */,
+			);
+			path = FastFiltersCarusel;
+			sourceTree = "<group>";
+		};
+		86CFAC732DB96E7D00FFC7D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86CFAC722DB96E7D00FFC7D3 /* FastFiltersCarusel */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86CFAC762DB96E7D00FFC7D3 /* FastFilters */ = {
+			isa = PBXGroup;
+			children = (
+				86CFAC732DB96E7D00FFC7D3 /* View */,
+				86CFAC742DB96E7D00FFC7D3 /* FastFiltersSheet.swift */,
+				86CFAC752DB96E7D00FFC7D3 /* FastFiltersSheetViewModel.swift */,
+			);
+			path = FastFilters;
 			sourceTree = "<group>";
 		};
 		86EBD0162D88939B00FEB763 = {
@@ -819,6 +889,8 @@
 		86EBD5342D89DEB500FEB763 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				86CFAC6A2DB96E6D00FFC7D3 /* GradingHelp */,
+				86CFAC762DB96E7D00FFC7D3 /* FastFilters */,
 				86EBD4CB2D89DEB500FEB763 /* CardDescription */,
 				86EBD4E02D89DEB500FEB763 /* CardIdentifier */,
 				86EBD4E32D89DEB500FEB763 /* Category */,
@@ -843,7 +915,7 @@
 				86EBD5362D89DEB500FEB763 /* CardDetails.swift */,
 				86EBD5372D89DEB500FEB763 /* CardDiscoverResponse.swift */,
 				86EBD5382D89DEB500FEB763 /* CardUploadResponse.swift */,
-				86EBD5392D89DEB500FEB763 /* Grade.swift */,
+				86EBD5392D89DEB500FEB763 /* GradeService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1133,9 +1205,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Football/Pods-Football-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Football/Pods-Football-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1153,6 +1229,10 @@
 				86EBD57A2D89DEB500FEB763 /* AlertPresentation.swift in Sources */,
 				86EBD57B2D89DEB500FEB763 /* Button+Styles.swift in Sources */,
 				86EBD57C2D89DEB500FEB763 /* GradientBackgorund.swift in Sources */,
+				86CFAC772DB96E7D00FFC7D3 /* FastFiltersView.swift in Sources */,
+				86CFAC782DB96E7D00FFC7D3 /* FastFilterType.swift in Sources */,
+				86CFAC792DB96E7D00FFC7D3 /* FastFiltersSheetViewModel.swift in Sources */,
+				86CFAC7A2DB96E7D00FFC7D3 /* FastFiltersSheet.swift in Sources */,
 				86EBD57D2D89DEB500FEB763 /* LoaderView.swift in Sources */,
 				86EBD57E2D89DEB500FEB763 /* PageTabBar.swift in Sources */,
 				86EBD57F2D89DEB500FEB763 /* ProgressView+Styles.swift in Sources */,
@@ -1254,7 +1334,7 @@
 				86EBD5DF2D89DEB500FEB763 /* CardDetails.swift in Sources */,
 				86EBD5E02D89DEB500FEB763 /* CardDiscoverResponse.swift in Sources */,
 				86EBD5E12D89DEB500FEB763 /* CardUploadResponse.swift in Sources */,
-				86EBD5E22D89DEB500FEB763 /* Grade.swift in Sources */,
+				86EBD5E22D89DEB500FEB763 /* GradeService.swift in Sources */,
 				86EBD5E32D89DEB500FEB763 /* CardDetailsRequest.swift in Sources */,
 				86EBD5E42D89DEB500FEB763 /* CategoriesRequest.swift in Sources */,
 				86EBD5E52D89DEB500FEB763 /* DiscoverRequest.swift in Sources */,
@@ -1284,6 +1364,10 @@
 				86EBD5FD2D89DEB500FEB763 /* IAPActionResult.swift in Sources */,
 				86EBD5FE2D89DEB500FEB763 /* IAPProduct.swift in Sources */,
 				86EBD5FF2D89DEB500FEB763 /* ProductPrice.swift in Sources */,
+				86CFAC6B2DB96E6D00FFC7D3 /* GradingHelpViewModel.swift in Sources */,
+				86CFAC6C2DB96E6D00FFC7D3 /* GradingHelpItem.swift in Sources */,
+				86CFAC6D2DB96E6D00FFC7D3 /* GradingHelpView.swift in Sources */,
+				86CFAC6E2DB96E6D00FFC7D3 /* GradingHelpType.swift in Sources */,
 				86EBD6002D89DEB500FEB763 /* IAPManager.swift in Sources */,
 				86EBD6012D89DEB500FEB763 /* PurchaseValidationObserver.swift in Sources */,
 				86EBD6022D89DEB500FEB763 /* SessionManager.swift in Sources */,
@@ -1449,7 +1533,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1492,7 +1576,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

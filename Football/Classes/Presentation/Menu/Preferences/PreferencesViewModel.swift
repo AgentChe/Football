@@ -9,11 +9,9 @@ import Foundation
 import Combine
 
 final class PreferencesViewModel: ObservableObject {
-//    @Published var currentCategory: CardCategory? = nil
-    @Published var currentGrade: Grade? = nil
+    @Published var currentGrade: GradeService? = nil
+    @Published var grades: [GradeService] = []
     @Published var screenState: ScreenState = .loading
-//    @Published var categories: [CardCategory] = []
-    @Published var grades: [Grade] = []
     @Published var isLoading: Bool = false
     
     private lazy var profileManager: ProfileManagerProtocol = ProfileManager()
@@ -22,16 +20,13 @@ final class PreferencesViewModel: ObservableObject {
     private var infoCancellable: AnyCancellable? = nil
     private var applyCancellable: AnyCancellable? = nil
     
-    init() {
-//        cardsManager
-//            .makeCategories(forceUpdate: false)
-//            .replaceError(with: [])
-//            .receive(on: DispatchQueue.main)
-//            .assign(to: &$categories)
-        
-        cardsManager
+    func load() async {
+        let gradeResponse = cardsManager
             .makeGrades(forceUpdate: false)
-            .replaceError(with: [])
+            .replaceError(with: nil)
+        
+        gradeResponse
+            .compactMap { $0?.service }
             .receive(on: DispatchQueue.main)
             .assign(to: &$grades)
         
@@ -49,7 +44,6 @@ final class PreferencesViewModel: ObservableObject {
                     }
                 }, 
                 receiveValue: { [weak self] model in
-//                    self?.currentCategory = self?.categories.first(where: { $0.alias == model.category })
                     self?.currentGrade = self?.grades.first(where: { $0.alias == model.grade })
                     self?.screenState = .loaded
                 }
@@ -60,7 +54,6 @@ final class PreferencesViewModel: ObservableObject {
         isLoading = true
         
         applyCancellable = profileManager
-//            .saveAttributes(grade: currentGrade?.alias, category: currentCategory?.alias)
             .saveAttributes(grade: currentGrade?.alias, category: nil)
             .sink(
                 receiveCompletion: { [weak self] completion in

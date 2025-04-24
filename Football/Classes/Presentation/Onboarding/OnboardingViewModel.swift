@@ -10,10 +10,10 @@ import Combine
 
 final class OnboardingViewModel: ObservableObject {
     @Published var selectedCategory: CardCategory? = nil
-    @Published var selectedGrade: Grade? = nil
+    @Published var selectedGrade: GradeService? = nil
     
     @Published var categories: [CardCategory] = []
-    @Published var grades: [Grade] = []
+    @Published var grades: [GradeService] = []
     
     @Published var pages: [OnboardingPageItem] = [.onboarding1, .onboarding2, .onboarding3, .onboarding5]
     @Published var currentPage: OnboardingPageItem = .onboarding1
@@ -27,14 +27,9 @@ final class OnboardingViewModel: ObservableObject {
     private var cancellable: AnyCancellable?
     
     init() {
-//        cardsManager
-//            .makeCategories(forceUpdate: false)
-//            .replaceError(with: [])
-//            .receive(on: DispatchQueue.main)
-//            .assign(to: &$categories)
-        
         cardsManager
             .makeGrades(forceUpdate: false)
+            .compactMap { $0?.service }
             .replaceError(with: [])
             .receive(on: DispatchQueue.main)
             .assign(to: &$grades)
